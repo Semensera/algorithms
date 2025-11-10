@@ -1,6 +1,5 @@
 // doublyLinkedList.js
 // Реалізація двобічно зв'язного списку (ES2020).
-// Запуск демо: node doublyLinkedList.js
 
 class Node {
   constructor(value) {
