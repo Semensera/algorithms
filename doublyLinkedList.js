@@ -1,5 +1,5 @@
 // doublyLinkedList.js
-// Реалізація двобічно зв'язного списку (ES2020).
+// Реалізація двобічно зв'язного списку
 
 class Node {
   constructor(value) {
@@ -111,7 +111,7 @@ class DoublyLinkedList {
     return sb;
   }
 
-  // --- helpers ---
+
   _ensureNotEmpty() {
     if (this._size === 0) throw new Error("List is empty");
   }
@@ -139,7 +139,6 @@ class DoublyLinkedList {
 
 module.exports = { DoublyLinkedList };
 
-// --- Демо ---
 if (typeof require !== "undefined" && require.main === module) {
   const list = new DoublyLinkedList();
   list.addLast(10);
