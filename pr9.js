@@ -1,5 +1,4 @@
-// Node.js >= 14
-// Запустити: node pr9.js
+
 
 const SIZES = [10_000, 100_000, 1_000_000, 10_000_000, 100_000_000];
 const RUNS = 3;
@@ -120,3 +119,5 @@ function timeOnce(fn, arr) {
 
   console.table(rows);
 })();
+// node --max-old-space-size=8192 pr9.js - так запускати
+
